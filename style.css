@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./images/pexels-triemli-reduced\ \(1\).jpg);
+
+    /* Prevents the image from repeating like a grid */
+    background-repeat: no-repeat;
+
+    /* Centers the image perfectly on the screen */
+    background-position: center;
+
+    /* Forces the image to scale nicely and cover the entire viewport */
+    background-size: cover;
+
+    /* Keeps the background fixed in place while scrolling */
+    background-attachment: fixed;
+
+
+}
+
+.signup-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    /* Slightly wider so input containers fit nicely */
+    background-color: rgba(255, 255, 255, 0);
+    /* Transparent white */
+    backdrop-filter: blur(10px);
+    /* Creates a soft glass blur effect */
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    /* Soft glass edge border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    margin-top: 140px;
+    margin-left: 450px;
+    height: 250px;
+    font-family: poppins;
+}
+
+h2 {
+    color: rgb(11, 11, 11);
+    
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.205);
+    color: rgb(1, 16, 58);
+outline: none;
+    font-size: 14px;
+    font-family: poppins;
+   
+}
+
+input::placeholder,
+textarea::placeholder {
+  color:rgb(0, 0, 0); /* Replace with your desired color */
+  opacity: 1;    /* Ensures the color is fully vibrant in Firefox */
+}
+
+button {
+  background: #fbca1f;
+  /* font-family: inherit; */
+  padding:  9.6px   20.8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.swal2-popup {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-title {
+  font-family: 'Montserrat', sans-serif !important;
+}
