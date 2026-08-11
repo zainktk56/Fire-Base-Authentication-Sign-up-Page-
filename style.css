@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(./images/pexels-triemli-reduced\ \(1\).jpg);
+    background-image: url(./images/vladimir163rus-railway-2818748_1.jpg);
 
     /* Prevents the image from repeating like a grid */
     background-repeat: no-repeat;
@@ -31,29 +31,29 @@ body {
     /* Transparent white */
     backdrop-filter: blur(10px);
     /* Creates a soft glass blur effect */
-    padding: 40px;
+    padding: 50px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.548);
     /* Soft glass edge border */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    margin-top: 140px;
-    margin-left: 450px;
-    height: 250px;
+    margin-top: 80px;
+    margin-left: 420px;
+    /* height: 300px; */
     font-family: poppins;
 }
 
 h2 {
-    color: rgb(11, 11, 11);
+    color: white;
     
 }
 
 input {
     padding: 10px;
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
     border: none;
     background-color: rgba(255, 255, 255, 0.205);
-    color: rgb(1, 16, 58);
+    color: white;
 outline: none;
     font-size: 14px;
     font-family: poppins;
@@ -62,28 +62,28 @@ outline: none;
 
 input::placeholder,
 textarea::placeholder {
-  color:rgb(0, 0, 0); /* Replace with your desired color */
+  color: white;/* Replace with your desired color */
   opacity: 1;    /* Ensures the color is fully vibrant in Firefox */
 }
 
-button {
-  background: #fbca1f;
-  /* font-family: inherit; */
-  padding:  9.6px   20.8px;
-  font-weight: 600;
-  font-size: 14px;
-  border: 3px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
-  cursor: pointer;
+#sbtn{
+  width: 80%;
+padding: 5px;
+height: 40px;
+border-radius: 15px;
+border: none;
+font-family: poppins;
+font-weight: 600;
+background-color: chartreuse;
+color: black;
 }
 
-button:hover {
+#sbtn:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
 }
 
-button:active {
+#sbtn:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
@@ -94,4 +94,37 @@ button:active {
 
 .swal2-title {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+#sbtn2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 55px;
+  border-radius: 17px;
+  border: none;
+  padding: 8px;
+  font-family: poppins;
+  font-weight: 600;
+
+}
+
+
+#sbtn2:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#sbtn2:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+p{
+  color: white;
+}
+
+a {
+    color:white; 
+   
 }
