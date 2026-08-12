@@ -36,7 +36,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.548);
     /* Soft glass edge border */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 420px;
     /* height: 300px; */
     font-family: poppins;
@@ -45,6 +45,10 @@ body {
 h2 {
     color: white;
     
+}
+
+#inputquestText{
+margin-right: 250px;
 }
 
 input {
