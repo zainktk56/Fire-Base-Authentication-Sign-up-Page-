@@ -66,7 +66,7 @@ project-root/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/firebase-auth-app.git
+git clone https://github.com/zainktk56/Complete-FireBase-Auth
 cd firebase-auth-app
 
 
@@ -170,7 +170,7 @@ Google Fonts – Poppins font.
 
 📧 Contact
 Your Name – Muhammad Zain – zaincreationz56@gmail.com
-Project Link: https://github.com/zainktk56/Fire-Base-Authentication-Sign-up-Page-
+Project Link: https://github.com/zainktk56/Complete-FireBase-Auth
 
 ⭐ If you like this project, give it a star! ⭐
 
