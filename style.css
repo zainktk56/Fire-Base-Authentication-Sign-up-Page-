@@ -1,134 +1,195 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(./images/vladimir163rus-railway-2818748_1.jpg);
-
-    /* Prevents the image from repeating like a grid */
     background-repeat: no-repeat;
-
-    /* Centers the image perfectly on the screen */
     background-position: center;
-
-    /* Forces the image to scale nicely and cover the entire viewport */
     background-size: cover;
-
-    /* Keeps the background fixed in place while scrolling */
     background-attachment: fixed;
-
-
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
 }
 
 .signup-div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 300px;
-    /* Slightly wider so input containers fit nicely */
+    width: 100%;
+    max-width: 400px;           /* wider than 300px for better readability */
     background-color: rgba(255, 255, 255, 0);
-    /* Transparent white */
     backdrop-filter: blur(10px);
-    /* Creates a soft glass blur effect */
-    padding: 50px;
+    padding: 40px 30px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.548);
-    /* Soft glass edge border */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
-    margin-left: 420px;
-    /* height: 300px; */
-    font-family: poppins;
+    margin: 0 auto;             /* center horizontally */
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
     color: white;
-    
+    font-size: clamp(1.4rem, 5vw, 2rem);
 }
 
-#inputquestText{
-margin-right: 250px;
+#inputquestText {
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-left: 2px;
 }
 
 input {
-    padding: 10px;
     width: 100%;
+    padding: 12px 14px;
     border-radius: 8px;
     border: none;
     background-color: rgba(255, 255, 255, 0.205);
     color: white;
-outline: none;
-    font-size: 14px;
-    font-family: poppins;
-   
+    outline: none;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: white;/* Replace with your desired color */
-  opacity: 1;    /* Ensures the color is fully vibrant in Firefox */
+input::placeholder {
+    color: white;
+    opacity: 1;
 }
 
-#sbtn{
-  width: 80%;
-padding: 5px;
-height: 40px;
-border-radius: 15px;
-border: none;
-font-family: poppins;
-font-weight: 600;
-background-color: chartreuse;
-color: black;
+input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#sbtn {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    background-color: chartreuse;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
 #sbtn:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
 }
 
 #sbtn:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
-.swal2-popup {
-  font-family: 'Poppins', sans-serif !important;
+#sbtn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 280px;
+    padding: 8px 16px;
+    border-radius: 17px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin: 0 auto;
 }
 
-.swal2-title {
-  font-family: 'Montserrat', sans-serif !important;
+#sbtn2 img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
-
-#sbtn2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 55px;
-  border-radius: 17px;
-  border: none;
-  padding: 8px;
-  font-family: poppins;
-  font-weight: 600;
-
-}
-
 
 #sbtn2:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
 }
 
 #sbtn2:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
-p{
-  color: white;
+p {
+    color: white;
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+    margin-top: 6px;
 }
 
 a {
-    color:white; 
-   
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* SweetAlert override */
+.swal2-popup {
+    font-family: 'Poppins', sans-serif !important;
+}
+.swal2-title {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* ── additional responsive tweaks ── */
+@media (max-width: 500px) {
+    .signup-div {
+        padding: 28px 18px;
+        border-radius: 12px;
+        max-width: 100%;
+    }
+    #sbtn,
+    #sbtn2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .signup-div {
+        padding: 22px 14px;
+    }
+    input {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    #sbtn {
+        height: 42px;
+        font-size: 0.85rem;
+    }
+    #sbtn2 {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+    #sbtn2 img {
+        width: 18px;
+        height: 18px;
+    }
 }
